@@ -27,6 +27,7 @@ body.dark {
     --side-nav: #242526;
     --text-color: #CCC;
     --search-bar: #242526;
+    --search-text: #ffffff;
 }
 
 nav {
@@ -277,4 +278,75 @@ body.dark .search-field i {
         display: block;
         margin-top: 20px;
     }
+}
+
+.secaodeapresentacao {
+    margin: 10px;
+}
+
+.coluna1 {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    text-align: justify;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--body-color);
+}
+
+.botao {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 5px;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+
+.T1 {
+    color: var(--search-text);
+}
+
+.p1 {
+    margin: 10px;
+    color: var(--search-text);
+}
+
+.coluna2 {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    text-align: justify;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--body-color);
+}
+
+.imgsuper {
+    border-radius: 15px;
+    height: 565px;
+}
+
+.imgMelhor-Estudos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    width: 900px;
+    border-radius: 15px;
 }
