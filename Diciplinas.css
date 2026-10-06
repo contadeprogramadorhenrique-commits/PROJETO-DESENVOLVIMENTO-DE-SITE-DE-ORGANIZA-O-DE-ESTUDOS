@@ -38,6 +38,21 @@
 #Matematica {
     display: none;
 }
+#portugeus {
+    display: none;
+}
+#geografia {
+    display: none;
+}
+#biologia {
+    display: none;
+}
+#artes{
+    display: none;
+}
+#quimica {
+    display: none;
+}
 
 .grid{
     display: grid;
@@ -48,4 +63,8 @@
 
 ul{
     list-style: none;
+}
+.Diciplinas {
+    text-align: center;
+    font-size: 55px
 }
