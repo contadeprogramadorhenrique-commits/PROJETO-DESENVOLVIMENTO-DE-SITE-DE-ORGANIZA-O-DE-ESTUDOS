@@ -14,6 +14,7 @@
     --text-color: #FFF;
     --search-bar: #F2F2F2;
     --search-text: #010718;
+    --tabela-fundo: white;
 }
 
 body {
@@ -27,6 +28,7 @@ body.dark {
     --side-nav: #242526;
     --text-color: #CCC;
     --search-bar: #242526;
+    --tabela-fundo: black;
 }
 
 nav {
@@ -279,3 +281,79 @@ body.dark .search-field i {
         margin-top: 20px;
     }
 }
+
+.cronograma{
+    width:90%;
+    max: width 1100px;
+    margin: 100px auto 30px; 
+}
+
+.cronograma h1{
+    margin-bottom: 10px;
+}
+
+.texto{
+    margin-bottom: 30px;
+}
+
+.configuracao{
+    background-color: var(--tabela-fundo);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.configuracao h2{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.horarios,
+.disciplina{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.horarios input,
+.disciplina input {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+
+.tabela{
+    background-color: var(--tabela-fundo);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tabela h2{
+    margin-bottom: 20px;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td{
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+th{
+    background-color: #4070F4;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+
+
