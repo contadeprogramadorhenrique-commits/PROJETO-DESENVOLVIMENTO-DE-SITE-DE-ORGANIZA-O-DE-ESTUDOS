@@ -6,6 +6,7 @@
     font-family: Arial, sans-serif;
     border-radius: 10px;
     background-color: #7497ee;
+    
 }
 
 .card img {
@@ -23,13 +24,28 @@
     cursor: pointer;
     width: calc(100% - 20px);
     margin: 10px auto;
+    border-radius: 10px;
 }
 
 .card button:hover {
     background-color: #555;
 }
-.card{
+
+.card {
     text-align: center;
 }
 
-#Matematica{display: none;}
+#Matematica {
+    display: none;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,320px);
+    gap: 50px;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+}
