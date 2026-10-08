@@ -1,0 +1,157 @@
+
+:root {
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --accent-color: #0ea5e9;
+    --border-radius: 12px;
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--text-main);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    background-color: #ffffff;
+    color: var(--text-main);
+    transition: var(--transition);
+    outline: none;
+}
+
+#searchBar:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* ==========================================================================
+   Grid de Professores (Layout Responsivo)
+   ========================================================================== */
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Teacher Card (Cartão Individual)
+   ========================================================================== */
+.teacher-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Imagem do Professor */
+.teacher-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background-color: #e2e8f0; /* Cor de fundo caso o Unsplash falhe */
+}
+
+/* Conteúdo Interno do Card */
+.teacher-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Garante que os botões fiquem alinhados embaixo */
+}
+
+.teacher-info h3 {
+    font-size: 1.3rem;
+    color: var(--text-main);
+    margin-bottom: 0.25rem;
+}
+
+/* Tag de Disciplina */
+.subject {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: rgba(14, 165, 233, 0.1);
+    color: var(--accent-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.teacher-info p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Empurra o botão para a base */
+}
+
+/* Botão de Perfil */
+.btn-profile {
+    display: block;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.btn-profile:hover {
+    background-color: var(--primary-hover);
+}
