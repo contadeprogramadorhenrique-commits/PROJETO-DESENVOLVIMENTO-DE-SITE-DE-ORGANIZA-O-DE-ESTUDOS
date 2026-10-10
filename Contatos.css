@@ -1,0 +1,100 @@
+.coluna1 {
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna2 {
+    float: left;
+}
+
+.coluna2 h2 {
+    margin: 10px 0;
+}
+
+.i1 {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.i2 {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.i3 {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 5px;
+    text-align: center;
+    width: 50%;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+.t1 {
+    margin: 10px;
+}
+
+.ms {
+    width: 80%;
+    padding: 60px;
+}
+
+footer {
+    background-color: rgb(24, 0, 173);
+    color: white;
+    padding: 50px;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+footer .grupo-contatos,
+footer .grupo-redes {
+    display: flex;
+    gap: 30px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .texto-sobreposicao {
+    margin: 0;
+}
+
+footer a {
+    margin: 5px 0;
+    color: #ffffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

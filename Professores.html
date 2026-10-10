@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores</title>
+    <link rel="stylesheet" href="Professores.css">
+    <link rel="stylesheet" href="Paginainicial.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo"><a href="#"><img src="/imgDaPaginaInicial/+Estudos1.png" alt=""></a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#"><img src="/imgDaPaginaInicial/+Estudos1.png" alt=""></a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="/Paginainicial.html">Home</a></li>
+                    <li><a href="/Diciplinas.html">Disciplinas</a></li>
+                    <li><a href="/Cronograma.html">Cronograma</a></li>
+                    <li><a href="/Contatos">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+                    <div class="search-field">
+                        <input type="text" placeholder="Pesquisar...">
+                        <i class='bx bx-search'></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+    <header>
+        <h1>Corpo Docente</h1>
+        <p>Conheça os professores e especialistas da nossa instituição</p>
+
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Busque por nome ou disciplina...">
+        </div>
+    </header>
+
+    <main class="teachers-grid" id="teachersGrid">
+
+        <div class="teacher-card" data-name="ana silva" data-subject="matemática">
+            <img src="/imgProfessores/professora.webp" alt="Prof. Ana Silva">
+            <div class="teacher-info">
+                <h3>Prof. Ana Silva</h3>
+                <span class="subject">Matemática / Álgebra</span>
+                <p>Mestre em Educação Matemática com 10 anos de experiência no ensino básico.</p>
+                <a href="/Diciplinas.html" class="btn-profile">Ver Material</a>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-name="carlos souza" data-subject="história">
+            <img src="/imgProfessores/pexels-rodnae-productions-7092613-scaled.jpg" alt="Prof. Carlos Souza">
+            <div class="teacher-info">
+                <h3>Prof. Carlos Souza</h3>
+                <span class="subject">História Geral e do Brasil</span>
+                <p>Especialista em História Contemporânea e criador de conteúdos pedagógicos digitais.</p>
+                <a href="/Diciplinas.html" class="btn-profile">Ver Material</a>
+            </div>
+        </div>
+
+        <div class="teacher-card" data-name="mariana costa" data-subject="química">
+            <img src="/imgProfessores/9-sugestoes-de-materiais-de-estudo-para-se-aprimorar-no-trabalho-docente.webp"
+                alt="Prof. Mariana Costa">
+            <div class="teacher-info">
+                <h3>Prof. Mariana Costa</h3>
+                <span class="subject">Química Orgânica</span>
+                <p>Doutora em Química Fundamental, dedicada à pesquisa científica e ao ensino médio.</p>
+                <a href="/Diciplinas.html" class="btn-profile">Ver Material</a>
+            </div>
+        </div>
+       
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
