@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
     <title>Página Inicial</title>
     <link rel="shorcut icon" type="image/x-icon" href="/imgDaPaginaInicial/Logo+Estudos.png">
     <link rel="stylesheet" href="Paginainicial.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -69,11 +72,99 @@
 
     <img class="imgMelhor-Estudos" src="/imgDaPaginaInicial/Melhor-Estudos.png" alt="">
 
+    <h1 class="T2">Diciplinas por Área de Estudos</h1>
+
+    <section class="secaodediciplina">
+
+        <div class="container swiper">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/imgDaPaginaInicial/Ciências da Natureza.jpg" alt="Card Image" class="card-image">
+                            <p class="badge Ciências-da-Natureza">🔬 Ciências da Natureza</p>
+                            <h2 class="card-title">Descrição: Exploração, descoberta e o entendimento do mundo vivo e
+                                físico. Através da Biologia, Química e Física, o aluno é incentivado a investigar
+                                fenômenos
+                                e realizar experimentos práticos. O foco é desenvolver o pensamento científico para
+                                compreender e proteger o meio ambiente e a saúde.</h2>
+                            <button class="card-button
+                        material-symbols-rounded">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/imgDaPaginaInicial/Ciências Humanas.jpg" alt="Card Image" class="card-image">
+                            <p class="badge Ciências-Humanas">🌍 Ciências Humanas</p>
+                            <h2 class="card-title">Descrição: Compreensão do passado para construir o futuro. Através
+                                da História, Geografia, Filosofia e Sociologia, o aluno desenvolve a consciência social,
+                                a cidadania e a capacidade de analisar os movimentos culturais e políticos. O objetivo é
+                                formar cidadãos conscientes, críticos e conectados com a sociedade global.
+                            </h2>
+                            <button class="card-button
+                        material-symbols-rounded">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/imgDaPaginaInicial/Linguagens e Códigos.jpg" alt="Card Image" class="card-image">
+                            <p class="badge Linguagens-e-Códigos">📝 Linguagens e Códigos</p>
+                            <h2 class="card-title">Descrição: A arte de se comunicar, expressar e interpretar com
+                                clareza. Abrangendo a Língua Portuguesa, literatura, redação e idiomas estrangeiros,
+                                esta vertente desenvolve a habilidade argumentativa, a criatividade e a empatia.
+                                Preparamos o estudante para ler o mundo e se fazer ouvir em qualquer cenário.</h2>
+                            <button class="card-button
+                        material-symbols-rounded">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/imgDaPaginaInicial/Matemática.webp" alt="Card Image" class="card-image">
+                            <p class="badge Matemática">🧮 Matemática</p>
+                            <h2 class="card-title">Descrição: Raciocínio lógico, precisão e estratégia para a resolução
+                                de problemas. Muito além das fórmulas, nossa abordagem estimula a capacidade analítica,
+                                a interpretação de dados e o pensamento estruturado. Preparamos o estudante para
+                                decifrar desafios complexos do cotidiano e do mercado com agilidade.</h2>
+                            <button class="card-button
+                        material-symbols-rounded">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/imgDaPaginaInicial/Atividades Extracurriculares.webp" alt="Card Image"
+                                class="card-image">
+                            <p class="badge Atividades-Extracurriculares">🎨 Atividades Extracurriculares</p>
+                            <h2 class="card-title">Descrição: Desenvolvimento integral, criatividade e socialização além
+                                da sala de aula. Através de esportes, artes, tecnologia e projetos sociais, estimulamos
+                                o protagonismo do estudante, o trabalho em equipe e a descoberta de novos talentos. É o
+                                espaço onde as paixões se transformam em habilidades para a vida.</h2>
+                            <button class="card-button
+                        material-symbols-rounded">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+
+    </section>
 
 
-
-
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
