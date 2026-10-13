@@ -601,17 +601,16 @@ body.dark .search-field i {
 
 .Icones-Das-Redes-Sociais {
     display: grid;
-    height: 70%;
+    height: 50%;
     width: 100%;
     place-items: center;
-    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    background: var(--body-color);
 }
 
 .wrapper .button {
     display: inline-block;
     height: 60px;
     width: 60px;
-    float: left;
     margin: 0 5px;
     overflow: hidden;
     background: #fff;
@@ -692,4 +691,26 @@ body.dark .search-field i {
 
 .wrapper .button:nth-child(5) span {
     color: #ff0000;
+}
+
+footer {
+    background-color: var(--nav-color);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    font-size: 20px;
+}
+
+footer a {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
