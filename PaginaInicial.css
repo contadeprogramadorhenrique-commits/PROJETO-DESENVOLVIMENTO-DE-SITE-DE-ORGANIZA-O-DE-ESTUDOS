@@ -14,6 +14,7 @@
     --text-color: #FFF;
     --search-bar: #F2F2F2;
     --search-text: #010718;
+    --secao-destaque: #ffffff;
 }
 
 body {
@@ -28,6 +29,7 @@ body.dark {
     --text-color: #CCC;
     --search-bar: #242526;
     --search-text: #ffffff;
+    --secao-destaque: #18191A;
 }
 
 nav {
@@ -351,14 +353,14 @@ body.dark .search-field i {
     border-radius: 15px;
 }
 
-.T2{
+.T2 {
     text-align: center;
     margin: 20px;
     font-size: 60px;
     color: var(--search-text);
 }
 
-.secaodediciplina{
+.secaodediciplina {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -420,17 +422,17 @@ body.dark .search-field i {
     background: #F7DFF5;
 }
 
-.card-list .card-link .badge.Linguagens-e-Códigos{
+.card-list .card-link .badge.Linguagens-e-Códigos {
     color: #B25A2B;
     background: #FFE3D2;
 }
 
-.card-list .card-link .badge.Matemática{
+.card-list .card-link .badge.Matemática {
     color: #205C20;
     background: #D6F8D6;
 }
 
-.card-list .card-link .badge.Atividades-Extracurriculares{
+.card-list .card-link .badge.Atividades-Extracurriculares {
     color: #856404;
     background: #fff3cd;
 }
@@ -482,5 +484,117 @@ body.dark .search-field i {
 
     .card-wrapper .swiper-slide-button {
         display: none;
+    }
+}
+
+.secaodedestaque {
+    background-color: var(--body-color);
+    margin: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+.coluna3,
+.coluna4 {
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: var(--body-color);
+}
+
+.coluna3 {
+    color: var(--search-text);
+}
+
+.coluna4 {
+    color: white;
+    align-items: center;
+}
+
+.tag-escola {
+    color: #0056b3;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.destaque-texto h1 {
+    font-size: clamp(32px, 4vw, 42px);
+    color: var(--search-text);
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.p2 {
+    font-size: clamp(18px, 2vw, 24px);
+}
+
+.destaque-botoes {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn-principal,
+.btn-secundario {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+}
+
+.btn-principal {
+    background-color: #0056b3;
+    color: #FFFFFF;
+}
+
+.btn-principal:hover {
+    background-color: #007BFF;
+}
+
+.btn-secundario {
+    background-color: #485766;
+    color: #FFFFFF;
+}
+
+.btn-secundario:hover {
+    background-color: #3d7bc2;
+}
+
+.video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    .secaodedestaque {
+        grid-template-columns: 1fr;
+        margin: 20px 10px;
+        gap: 20px;
+    }
+
+    .coluna3,
+    .coluna4 {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .destaque-botoes {
+        justify-content: center;
     }
 }
